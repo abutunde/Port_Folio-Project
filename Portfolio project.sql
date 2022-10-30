@@ -1,4 +1,4 @@
-----Likeness of a person dying if he contracts covid-19 in Nigeria
+----Possibility of a person dying if he contracts covid-19 in Nigeria
 select location,
 	date,
 	total_cases,
@@ -99,7 +99,7 @@ SELECT
 	(new_deathperday/new_casesperday)*100 as GDP
 	FROM(
 select
-	--date,
+	date,
 	sum(new_cases) over(partition by date order by date) as new_casesperday,
 	sum(cast(new_deaths as int)) over(partition by date order by date) as new_deathperday
 	--(new_casesperday/new_deathperday)*100 as GDP
