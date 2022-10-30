@@ -1,4 +1,4 @@
-----probability of a person dying if he contracts covid-19 in Nigeria
+----Likeness of a person dying if he contracts covid-19 in Nigeria
 select location,
 	date,
 	total_cases,
